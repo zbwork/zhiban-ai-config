@@ -1,0 +1,75 @@
+# Empty template; fill every required field before use.
+env: ''
+postgres:
+  dsn: ''
+  max_open_conns: 0
+  max_idle_conns: 0
+redis:
+  mode: ''
+  addr: ''
+  password: ''
+  db: ''
+  sentinel_addrs: ''
+  sentinel_master_name: ''
+  sentinel_password: ''
+runtime:
+  mode: ''
+  local_endpoint_url: ''
+  default_runtime_code: ''
+  health_timeout_sec: 0
+aigc:
+  base_url: ''
+  token: ''
+  default_model: ''
+  embedding_model: ''
+  embedding_dims: ''
+  timeout_sec: ''
+  admin_key: ''
+  project_id: ''
+a2a:
+  embedding_backfill:
+    enabled: ''
+    interval_minutes: ''
+    batch_limit: ''
+  stream_cleanup:
+    enabled: ''
+    interval_minutes: ''
+    retention_days: ''
+    batch_limit: ''
+baigong_ops:
+  base_url: ''
+  token: ''
+  timeout_sec: 0
+billing:
+  mock_provider_enabled: ''
+  aigc_kafka:
+    enabled: ''
+    brokers: ''
+    topic: ''
+    group_id: ''
+    required_acks: ''
+    min_bytes: ''
+    max_bytes: ''
+  wechat:
+    enabled: ''
+    app_id: ''
+    mch_id: ''
+    mch_cert_serial_no: ''
+    api_v3_key: ''
+    private_key_pem: ''
+    private_key_path: ''
+    wechatpay_public_key_id: ''
+    wechatpay_public_key_pem: ''
+    wechatpay_public_key_path: ''
+    notify_url: ''
+    refund_notify_url: ''
+    trade_type: ''
+  alipay:
+    enabled: ''
+    app_id: ''
+    notify_url: ''
+log:
+  level: ''
+  format: ''
+  path: ''
+  name: ''

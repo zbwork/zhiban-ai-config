@@ -1,0 +1,15 @@
+# Only templates and instructions may be tracked under environments.
+environments/**
+!environments/**/
+!environments/**/*.example
+!environments/**/README.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+.DS_Store

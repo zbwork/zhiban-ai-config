@@ -1,0 +1,227 @@
+# Empty template; fill every required field before use.
+env: ''
+http:
+  addr: ''
+  read_timeout_ms: 0
+  write_timeout_ms: 0
+postgres:
+  dsn: ''
+  max_open_conns: 0
+  max_idle_conns: 0
+redis:
+  mode: ''
+  addr: ''
+  password: ''
+  db: ''
+  sentinel_addrs: ''
+  sentinel_master_name: ''
+  sentinel_password: ''
+jwt:
+  secret: ''
+  signing_key: ''
+  verify_key: ''
+  issuer: ''
+  ttl_hours: 0
+  algorithm: ''
+local_coding:
+  enabled: false
+  token_ttl_seconds: 0
+  codex_profile_version: ''
+  claude_profile_version: ''
+aigc:
+  base_url: ''
+  token: ''
+  default_model: ''
+  embedding_model: ''
+  embedding_dims: ''
+  agent_models: ''
+  timeout_sec: 0
+  admin_key: ''
+  project_id: ''
+  template_channel_id: ''
+  channel_sync_interval_sec: ''
+runtime:
+  mode: ''
+  local_endpoint_url: ''
+  local_bearer: ''
+  openclaw_image: ''
+  openclaw_kb_search_tool_enabled: ''
+  k8s_namespace: ''
+  k8s_kubeconfig: ''
+  workload_api_url: ''
+  workload_api_token: ''
+  default_runtime_code: ''
+  health_timeout_sec: 0
+  self_base_url: ''
+  backchannel_url: ''
+  backchannel_secret: ''
+  probe_token_secret: ''
+  probe_allow_http: false
+  probe_allowed_hosts:
+  - ''
+  - ''
+wukong:
+  enabled: false
+  api_addr: ''
+  tcp_addr: ''
+  ws_addr: ''
+  webhook_secret_ref: ''
+  webhook_ip_allowlist: ''
+chat:
+  fanout_backend: ''
+  sse_heartbeat: ''
+  sse_max_conn_per_account: 0
+  context_recent_n: 0
+  rag_enabled: ''
+  rag_total_timeout_ms: ''
+  rag_cache_ttl_seconds: ''
+  rag_negative_ttl_seconds: ''
+  rag_max_kb_fanout: ''
+  rag_max_concurrency: ''
+  agent_direct_wukong_enabled: false
+  wukong_send_outbox_enabled: false
+rtc:
+  token_mode: ''
+  app_id: ''
+  app_key: ''
+  gslb_server: ''
+  agent:
+    enabled: ''
+    default_agent_id: ''
+    llm_callback_base_url: ''
+    llm_callback_path: ''
+    llm_fallback_tenant_id: ''
+    llm_fallback_account_id: ''
+    llm_fallback_agent_uuid: ''
+    interrupt_enabled: ''
+    vision_enabled: ''
+    preferred_video_stream: ''
+    welcome_message: ''
+    silent_timeout_seconds: ''
+    environment_volume: ''
+    semantic_interrupt: ''
+    handoff_enabled: ''
+    asr:
+      name: ''
+      sentence_timeout_ms: ''
+      voice_activity_ms: ''
+    llm:
+      name: ''
+      provider: ''
+      model: ''
+      base_url: ''
+      api_key: ''
+      temperature: ''
+      top_p: ''
+      max_tokens: ''
+      history_depth: ''
+    tts:
+      name: ''
+      provider: ''
+      model: ''
+      api_key: ''
+      voice: ''
+      volume: ''
+      speech_rate: ''
+      pitch_rate: ''
+    openapi:
+      region: ''
+      access_key_id: ''
+      access_key_secret: ''
+      sts_role_arn: ''
+object_store:
+  backend: ''
+  base_url: ''
+  hmac_secret: ''
+drive:
+  object_store_backend: ''
+  default_personal_quota_bytes: 0
+  max_file_bytes: 0
+  mime_blocklist:
+  - ''
+  - ''
+  - ''
+  presign_put_ttl: ''
+  presign_get_ttl: ''
+oss:
+  endpoint: ''
+  read_endpoint: ''
+  region: ''
+  bucket: ''
+  access_key_id: ''
+  access_key_secret: ''
+  force_path_style: false
+  presign_put_ttl: ''
+  presign_get_ttl: ''
+knowledge:
+  allow_stub_fallback: false
+  doc_max_bytes: 0
+  platform_quota_bytes: 0
+  default_top_k: 0
+  default_threshold: 0
+  recall_timeout_ms: 0
+cron:
+  min_frequency: ''
+  dispatch_interval: ''
+  lock_ttl: ''
+  failure_threshold: 0
+  payload_max_bytes: 0
+  default_timezone: ''
+  run_stale_timeout: ''
+  disable_runtime_projection: false
+composer:
+  config_ttl: ''
+  params_max_bytes: 0
+invite:
+  landing_base_url: ''
+member_invite:
+  token_secret: ''
+sms:
+  provider: ''
+  api_host: ''
+  org_no: ''
+  sys_id: ''
+  business_id: ''
+  version: ''
+  template_login: ''
+  template_member_invite: ''
+  template_member_invite_notice: ''
+  dev_fixed_code: ''
+baigong_ops:
+  base_url: ''
+  token: ''
+  timeout_sec: 0
+billing:
+  mock_provider_enabled: ''
+  wechat:
+    enabled: ''
+    app_id: ''
+    mch_id: ''
+    mch_cert_serial_no: ''
+    api_v3_key: ''
+    private_key_pem: ''
+    private_key_path: ''
+    wechatpay_public_key_id: ''
+    wechatpay_public_key_pem: ''
+    wechatpay_public_key_path: ''
+    notify_url: ''
+    refund_notify_url: ''
+    trade_type: ''
+  alipay:
+    enabled: ''
+    app_id: ''
+    notify_url: ''
+dsh_runtime:
+  url: ''
+  api_key_secret_ref: ''
+  bus_client_id: ''
+  bus_client_secret: ''
+  name: ''
+  agent_models: ''
+zap:
+  allow_agent_id_header: false
+log:
+  level: ''
+  format: ''
+  path: ''
+  name: ''

@@ -1,0 +1,540 @@
+{
+  "browser": {
+    "enabled": false,
+    "headless": false,
+    "noSandbox": false
+  },
+  "auth": {
+    "profiles": {
+      "openai:default": {
+        "provider": "",
+        "mode": ""
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "aigc": {
+        "baseUrl": "",
+        "apiKey": "",
+        "api": "",
+        "models": [
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          }
+        ]
+      },
+      "openai": {
+        "baseUrl": "",
+        "apiKey": "",
+        "api": "",
+        "models": [
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "input": [
+              ""
+            ]
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "input": [
+              ""
+            ]
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "input": [
+              ""
+            ]
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "input": [
+              ""
+            ]
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "input": [
+              ""
+            ]
+          }
+        ]
+      },
+      "google": {
+        "baseUrl": "",
+        "apiKey": "",
+        "api": "",
+        "models": [
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          },
+          {
+            "id": "",
+            "name": "",
+            "api": "",
+            "reasoning": false,
+            "input": [
+              "",
+              ""
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 0,
+            "maxTokens": 0
+          }
+        ]
+      },
+      "zhipu": {
+        "baseUrl": "",
+        "apiKey": "",
+        "api": "",
+        "models": []
+      },
+      "kling": {
+        "baseUrl": "",
+        "apiKey": "",
+        "api": "",
+        "models": []
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "",
+        "fallbacks": [
+          "",
+          ""
+        ]
+      },
+      "imageModel": "",
+      "imageGenerationModel": {
+        "primary": "",
+        "fallbacks": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "videoGenerationModel": {
+        "primary": "",
+        "fallbacks": [
+          ""
+        ]
+      },
+      "heartbeat": {
+        "every": "",
+        "activeHours": {
+          "start": "",
+          "end": ""
+        },
+        "model": ""
+      },
+      "compaction": {
+        "mode": "",
+        "reserveTokensFloor": 0
+      },
+      "verboseDefault": "",
+      "blockStreamingCoalesce": {
+        "minChars": 0,
+        "maxChars": 0,
+        "idleMs": 0
+      },
+      "maxConcurrent": 0,
+      "subagents": {
+        "maxConcurrent": 0
+      },
+      "memorySearch": {
+        "enabled": false
+      },
+      "models": {
+        "aigc/openai/gpt-5.4": {},
+        "aigc/openai/gpt-5.4-mini": {},
+        "aigc/openai/qwen3.5-max-coder": {},
+        "aigc/openai/deepseek-chat": {},
+        "google/gemini-2.5-pro": {},
+        "google/gemini-2.5-flash-lite": {}
+      },
+      "workspace": ""
+    }
+  },
+  "tools": {
+    "profile": "",
+    "media": {
+      "models": [
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        },
+        {
+          "provider": "",
+          "model": "",
+          "capabilities": [
+            ""
+          ]
+        }
+      ]
+    }
+  },
+  "session": {
+    "dmScope": ""
+  },
+  "channels": {
+    "wecom": {
+      "enabled": false,
+      "connectionMode": ""
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": false,
+      "entries": {
+        "boot-md": {
+          "enabled": false
+        },
+        "bootstrap-extra-files": {
+          "enabled": false
+        },
+        "command-logger": {
+          "enabled": false
+        },
+        "session-memory": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "entries": {
+      "ai-office-webhook": {
+        "enabled": false
+      },
+      "memory-core": {
+        "enabled": false
+      },
+      "zhiban-kb-search": {
+        "enabled": false,
+        "config": {
+          "baseUrl": "",
+          "toolPath": "",
+          "memoryRecallPath": "",
+          "memoryWritePath": "",
+          "timeoutMs": 0
+        }
+      },
+      "wecom-openclaw-plugin": {
+        "enabled": false
+      },
+      "aigc-llm-image": {
+        "enabled": false,
+        "config": {
+          "sidecarUrl": "",
+          "providers": {
+            "doubao": {
+              "label": "",
+              "defaultModel": "",
+              "models": [
+                "",
+                "",
+                ""
+              ],
+              "timeoutMs": 0,
+              "minPixelsByModel": {
+                "doubao-seedream-5-0-260128": 0,
+                "doubao-seedream-4-5-251128": 0
+              }
+            },
+            "gemini": {
+              "label": "",
+              "defaultModel": "",
+              "models": [
+                "",
+                ""
+              ],
+              "timeoutMs": 0
+            },
+            "gpt": {
+              "label": "",
+              "defaultModel": "",
+              "models": [
+                ""
+              ],
+              "timeoutMs": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 0,
+    "mode": "",
+    "bind": "",
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": false
+        },
+        "responses": {
+          "enabled": false
+        }
+      }
+    },
+    "controlUi": {
+      "dangerouslyAllowHostHeaderOriginFallback": false,
+      "allowInsecureAuth": false,
+      "dangerouslyDisableDeviceAuth": false
+    },
+    "auth": {
+      "mode": "",
+      "token": ""
+    },
+    "nodes": {
+      "denyCommands": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "skills": {
+    "allowBundled": [],
+    "load": {
+      "extraDirs": [
+        ""
+      ],
+      "watch": false,
+      "watchDebounceMs": 0
+    },
+    "install": {
+      "preferBrew": false,
+      "nodeManager": ""
+    },
+    "entries": {}
+  }
+}

@@ -1,0 +1,113 @@
+# Empty template; fill every required field before use.
+env: ''
+admin:
+  addr: ''
+  read_timeout_ms: 0
+  write_timeout_ms: 0
+postgres:
+  dsn: ''
+  max_open_conns: 0
+  max_idle_conns: 0
+redis:
+  mode: ''
+  addr: ''
+  password: ''
+  db: ''
+  sentinel_addrs: ''
+  sentinel_master_name: ''
+  sentinel_password: ''
+jwt:
+  secret: ''
+  signing_key: ''
+  verify_key: ''
+  issuer: ''
+  ttl_hours: 0
+  algorithm: ''
+baigong_ops:
+  base_url: ''
+  token: ''
+  timeout_sec: 0
+aigc:
+  base_url: ''
+  token: ''
+  default_model: ''
+  embedding_model: ''
+  embedding_dims: ''
+  agent_models: ''
+  timeout_sec: 0
+  admin_key: ''
+  project_id: ''
+runtime:
+  mode: ''
+  local_endpoint_url: ''
+  local_bearer: ''
+  openclaw_image: ''
+  k8s_namespace: ''
+  k8s_kubeconfig: ''
+  workload_api_url: ''
+  workload_api_token: ''
+  default_runtime_code: ''
+  health_timeout_sec: 0
+  self_base_url: ''
+  backchannel_url: ''
+  backchannel_secret: ''
+  probe_token_secret: ''
+  probe_allow_http: false
+  probe_allowed_hosts:
+  - ''
+  - ''
+wukong:
+  enabled: false
+  api_addr: ''
+  tcp_addr: ''
+  ws_addr: ''
+  webhook_secret_ref: ''
+  webhook_ip_allowlist: ''
+knowledge:
+  allow_stub_fallback: false
+  doc_max_bytes: 0
+  platform_quota_bytes: 0
+  default_top_k: 0
+  default_threshold: 0
+  recall_timeout_ms: 0
+cron:
+  min_frequency: ''
+  dispatch_interval: ''
+  lock_ttl: ''
+  failure_threshold: 0
+  payload_max_bytes: 0
+  default_timezone: ''
+  run_stale_timeout: ''
+composer:
+  config_ttl: ''
+  params_max_bytes: 0
+sms:
+  provider: ''
+  dev_fixed_code: ''
+member_invite:
+  skip_confirmation: false
+billing:
+  mock_provider_enabled: ''
+  wechat:
+    enabled: ''
+    app_id: ''
+    mch_id: ''
+    mch_cert_serial_no: ''
+    api_v3_key: ''
+    private_key_pem: ''
+    private_key_path: ''
+    wechatpay_public_key_id: ''
+    wechatpay_public_key_pem: ''
+    wechatpay_public_key_path: ''
+    notify_url: ''
+    refund_notify_url: ''
+    trade_type: ''
+  alipay:
+    enabled: ''
+    app_id: ''
+    notify_url: ''
+log:
+  level: ''
+  format: ''
+  path: ''
+  name: ''
