@@ -6,6 +6,21 @@
 
 社区默认使用主代码仓库的 deploy/community，不需要这个模板仓库。先按主仓库的 docs/INSTALL.md 完成 Docker Compose、初始化管理员和 Mock 对话。模型配置、数据库和对象存储以当前社区部署文件为准。
 
+### 可选应用 H5 免登
+
+在主代码仓库 deploy/community 的本地 .env 中设置以下字段，不把真实配置提交到本仓库：
+
+| 字段 | 用途 |
+|---|---|
+| COMMUNITY_APP_ISSUER | 部署者自己的 HTTPS issuer，供 Discovery/JWKS 和应用换码使用；应用后端须能访问并信任其 TLS 证书。 |
+| AGBUS_SECRETBOX_KEY | 加密数据库中的 OAuth 签名私钥；使用 openssl rand -base64 32 生成，持久保存并纳入安全备份，不能每次启动重新生成。 |
+
+两项默认为空。未配置 issuer 时不注册应用启动及 OAuth 换码路由。启用方式以主仓库 deploy/community/README.md 与 .env.example 为准；这些字段是 Bus 部署配置，不是桌面客户端 OAuth 密钥。
+
+### 服务端模板边界
+
+environments/test/config/agent-bus/configs 下的 bus.yaml.example、admin.yaml.example 是既有部署的字段骨架，包含商业或历史字段，不能直接交给社区 community-bus/community-admin 使用。社区入口使用主仓库 deploy/community/service.yaml 和 Compose 环境变量；不要把商业 Bus/Admin 模板整体复制进去。
+
 ## 模板怎么用
 
 1. 按 development、test、production 选择环境及组件目录。
